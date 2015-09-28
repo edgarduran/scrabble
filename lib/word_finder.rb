@@ -1,6 +1,10 @@
 class WordFinder
-  def words
-    File.read('/usr/share/dict/words').split("\n")
+
+  def words(path)
+    text = File.read(path).split("\n")
+    puts text
   end
-  
+
 end
+
+text = WordFinder.new(words.txt)
